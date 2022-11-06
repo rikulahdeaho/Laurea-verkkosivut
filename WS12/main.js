@@ -7,6 +7,21 @@ $('.navbar a').on('click', function (e) {
       $('html, body')
        .animate({
           scrollTop: $(hash).offset().top
-        },500);
+        },400);
     }
   });
+
+window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+	var element = document.getElementById("navbar");
+
+    if (scroll >= 150) {
+  		element.classList.remove("transparent");
+  		element.classList.add("solid");
+    }
+    else if (scroll <= 150) {
+  		element.classList.remove("solid");
+  		element.classList.add("transparent");
+    }
+
+});

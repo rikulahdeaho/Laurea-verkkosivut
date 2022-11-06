@@ -9,54 +9,153 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid" >
     <div>
-      <!--<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#home">Home</a>
-            <a class="nav-item nav-link" href="#about">About</a>
-            <a class="nav-item nav-link" href="#service">Service</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
-          </div>
-        </div>
-      </nav>-->
-        <nav class="navbar navbar-dark fixed-top navbar-expand-md">
-          <a href="#home" class="navbar-brand">DemoTech</a>
-          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <nav class="navbar navbar-dark fixed-top navbar-expand-md" id="navbar">
+          <div class="container">
+          <a href="#home" class="navbar-brand">Hiilijalanjälkilaskuri</a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarmenu">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-collapse collapse" id="navbar">
+          <div class="navbar-collapse collapse" id="navbarmenu">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
           </div>
+        </div>
         </nav>
       </div>
 
       <div class="jumbotron jumbotron-fluid">
         <section id="home">
-            <h1 class="display-4">Home</h1>
+            <h1 class="display-4">Landing</h1>
             <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nesciunt numquam praesentium quis magnam hic.</p>
+            <button class="btn btn-primary">Register</button>
             <div class="scroll-down"></div>
         </section>
-        <section id="about">
-            <h1 class="display-4">About</h1>
-            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nesciunt numquam praesentium quis magnam hic.</p>
-        </section>        
         <section id="service">
-            <h1 class="display-4">Service</h1>
-            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nesciunt numquam praesentium quis magnam hic.</p>
+            <div class="container">
+              <h1 class="display-4">Esittely</h1>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div>
+                        <img src="./Home.jpg" class="d-block w-100" alt="1">
+                      </div>
+                      <hr/>
+                      <div>
+                        <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div>
+                        <img src="./Home.jpg" class="d-block w-100" alt="1">
+                      </div>
+                      <hr/>
+                      <div>
+                        <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div>
+                        <img src="./Home.jpg" class="d-block w-100" alt="1">
+                      </div>
+                      <hr/>
+                      <div>
+                        <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </section>
-        <section id="contact">
-            <h1 class="display-4">Contact</h1>
-            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nesciunt numquam praesentium quis magnam hic.</p>
+        <section id="about">
+            <div class="container">
+              <h1 class="display-4">Kuvaus</h1>
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="./Home.jpg" class="d-block w-100" alt="1">
+                </div>
+                <div class="col-md-6">
+                  <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="./Home.jpg" class="d-block w-100" alt="1">
+                </div>
+              </div>
+              <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Home.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Home.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Home.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+              </div>
+            </div>
+        </section>        
+        <section id="footer">
+            <div class="container">
+              <h1 class="display-4">Yhteydenotot</h1>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="formi">
+                    <h1 class="display-4">Meidät tavoittaa seuraavista yhteystiedoista:</h1>
+                    <p class="lead">Startecon Oy</p>
+                    <p class="lead">info(at)startecon.fi</p>
+                    <p class="lead">+358 45 105 2200</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                <div class="formi">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
         </section>
       </div>
   </div>
