@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RubyToken</title>
+    <title>Hiilijalanjälkilaskuri</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
@@ -31,15 +31,21 @@
 
       <div class="jumbotron jumbotron-fluid">
         <section id="home">
-            <h1 class="display-4">Landing</h1>
-            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nesciunt numquam praesentium quis magnam hic.</p>
-            <button class="btn btn-primary">Register</button>
-            <div class="scroll-down"></div>
+          <div class="container">
+            <div class="home">
+              <div class="homeText">
+                <h1 class="display-4">Landing</h1>
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nesciunt numquam praesentium quis magnam hic.</p>
+                <button class="btn btn-primary">Register</button>
+                <div class="scroll-down"></div>
+              </div>
+            </div>
+          </div>
         </section>
         <section id="about">
             <div class="container">
              <h1 class="display-4">Esittely</h1>
-              <div class="row">
+              <div class="row aboutsec">
                 <div class="col-md-4">
                   <div class="card">
                     <div class="card-body">
@@ -80,112 +86,81 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row aboutsec">
+                  <div class="col-md-6">
+                    <div class="aboutrow">
+                      <img src="./Home.jpg" class="d-block w-100" alt="1">
+                    </div>
+                  </div>
+                  <div class="col-md-6" >
+                    <div class="aboutrow">
+                      <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="row aboutsec">
                 <div class="col-md-6">
-                  <img src="./Home.jpg" class="d-block w-100" alt="1">
+                  <div class="aboutrow">
+                    <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
+                  </div>
                 </div>
                 <div class="col-md-6">
-                  <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
+                  <div class="aboutrow">
+                      <img src="./Home.jpg" class="d-block w-100" alt="1">
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <p>Pellentesque accumsan, neque id condimentum malesuada, augue ipsum mollis mauris, id lacinia risus diam id erat. Sed quis malesuada quam. Mauris pellentesque velit eu ligula sagittis fringilla.</p>
-                </div>
-                <div class="col-md-6">
-                  <img src="./Home.jpg" class="d-block w-100" alt="1">
-                </div>
-              </div>
-              <div class="row">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe src="https://player.vimeo.com/video/720194650?h=0ec44df307" width="100%" height="1000px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                </div>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/720194650?h=0ec44df307" width="100%" height="1000px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
+          </div>
         </section> 
         <section id="service">
-          <div class="container-fluid py-5">
-
+          <h1 class="display-4">Käyttöönotto</h1>
+          <div class="container py-5">
             <div class="row">
-              <div class="col-lg-12">
-
-                <div class="horizontal-timeline">
-
-                  <ul class="list-inline items">
-                    <li class="list-inline-item items-list">
-                      <div class="px-4">
-                        <div class="event-date badge bg-info">2 June</div>
-                        <h5 class="pt-2">Event One</h5>
-                        <p class="text-muted">It will be as simple as occidental in fact it will be Occidental Cambridge
-                          friend</p>
-                        <div>
-                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                        </div>
-                      </div>
+              <div class="col-md-12">
+                <div id="content">
+                  <ul class="timeline-1 text-black">
+                    <li class="event" data-date="1st">
+                      <h4 class="mb-3">Registration</h4>
+                      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
                     </li>
-                    <li class="list-inline-item items-list">
-                      <div class="px-4">
-                        <div class="event-date badge bg-success">5 June</div>
-                        <h5 class="pt-2">Event Two</h5>
-                        <p class="text-muted">Everyone realizes why a new common language one could refuse translators.
-                        </p>
-                        <div>
-                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                        </div>
-                      </div>
+                    <li class="event" data-date="2nd">
+                      <h4 class="mb-3 pt-3">Opening Ceremony</h4>
+                      <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta
+                        Rhymes as an opening show.</p>
                     </li>
-                    <li class="list-inline-item items-list">
-                      <div class="px-4">
-                        <div class="event-date badge bg-danger">7 June</div>
-                        <h5 class="pt-2">Event Three</h5>
-                        <p class="text-muted">If several languages coalesce the grammar of the resulting simple and
-                          regular</p>
-                        <div>
-                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-inline-item items-list">
-                      <div class="px-4">
-                        <div class="event-date badge bg-warning">8 June</div>
-                        <h5 class="pt-2">Event Four</h5>
-                        <p class="text-muted">Languages only differ in their pronunciation and their most common words.
-                        </p>
-                        <div>
-                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                        </div>
-                      </div>
+                    <li class="event" data-date="3rd">
+                      <h4 class="mb-3 pt-3">Main Event</h4>
+                      <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get
+                        ready!</p>
                     </li>
                   </ul>
-
                 </div>
-
               </div>
             </div>
-
           </div>
         </section>       
         <section id="footer">
             <div class="container">
-              <h1 class="display-4">Yhteydenotot</h1>
+              <h1 class="display-4">Yhteystiedot</h1>
               <div class="row">
                 <div class="col-md-6">
                   <div class="formi">
-                    <h1 class="display-4">Meidät tavoittaa seuraavista yhteystiedoista:</h1>
-                    <p class="lead">Startecon Oy</p>
+                    <h1 class="display-4">Lisätietoa saa:</h1>
+                    <a class="lead" href="https://www.startecon.fi" target="_blank">Startecon Oy</a>
                     <p class="lead">info(at)startecon.fi</p>
-                    <p class="lead">+358 45 105 2200</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                 <div class="formi">
+                  <p class="lead">Sähköposti ilmoitus tuotteen valmistuessa</p>
                   <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button class="btn btn-primary">Register</button>
                   </div>
                 </div>
               </div>
