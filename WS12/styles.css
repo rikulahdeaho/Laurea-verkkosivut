@@ -34,7 +34,6 @@
     display: flex;
     height: 100%;
     justify-content: center;
-    align-items: center;
     padding: 20px 0px;
   }
 
@@ -42,6 +41,9 @@
     height: 100%;
   }
 
+  .aboutImg {
+    border-radius: 15px;
+  }
   section {
     position: relative;
     display: flex;
@@ -68,33 +70,37 @@
 
   section#home {
     height: 100vh;
-    background: url('./Home.jpg') no-repeat center center/cover;
+    background: url('./Forest.jpg') no-repeat center center/cover;
     align-items: flex-start;
     padding: 200px 10px 15px 10px;
   }
   
   section#about {
     justify-content: center;
-    background: #b0aec1;
+    background: #cfcaca;
     height: 100%;
     padding: 2%;
+    color: #3a3737
     /*background: linear-gradient(#e66465, #9198e5);*/
   }
   
   section#service {
     /*background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;;*/
     background: #3b2117;
-    height: 100%vh;
+    height: 100%;
+    padding: 150px 0px;
   }
   
   section#footer {
     /*background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;;*/
     background: #3b2537;
     padding: 10px;
+    min-height: 100%;
+    padding: 150px 0px;
   }
 
 .navbar-brand {
-  font-size: 20pt;
+  font-size: 18pt;
   padding: 15px;
 }
 
@@ -117,6 +123,12 @@
 }
 
 .nav-link:hover {
+  border-radius: 5px;
+  background: #fff;
+  color: #000 !important;
+}
+
+.nav-link.active{
   border-radius: 5px;
   background: #fff;
   color: #000 !important;
@@ -198,82 +210,64 @@
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
 
-.timeline-1 {
-  border-left: 3px solid #b565a7;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
-  background: rgba(177, 99, 163, 0.09);
-  margin: 0 auto;
-  position: relative;
-  padding: 50px;
-  list-style: none;
-  text-align: left;
-  max-width: 40%;
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
 }
 
-@media (max-width: 767px) {
-  .timeline-1 {
-    max-width: 98%;
-    padding: 25px;
-  }
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
 }
 
-.timeline-1 .event {
-  border-bottom: 1px dashed #000;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  position: relative;
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
 }
 
-@media (max-width: 767px) {
-  .timeline-1 .event {
-    padding-top: 30px;
-  }
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
 }
 
-.timeline-1 .event:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
 }
 
-.timeline-1 .event:before,
-.timeline-1 .event:after {
-  position: absolute;
-  display: block;
-  top: 0;
-}
-
-.timeline-1 .event:before {
-  left: -207px;
-  content: attr(data-date);
-  text-align: right;
-  font-weight: 100;
-  font-size: 2em;
-  min-width: 120px;
-}
-
-@media (max-width: 767px) {
-  .timeline-1 .event:before {
-    left: 0px;
-    text-align: left;
-  }
-}
-
-.timeline-1 .event:after {
-  -webkit-box-shadow: 0 0 0 3px #b565a7;
-  box-shadow: 0 0 0 3px #b565a7;
-  left: -55.8px;
-  background: #fff;
-  border-radius: 50%;
-  height: 9px;
-  width: 9px;
-  content: "";
-  top: 5px;
-}
-
-@media (max-width: 767px) {
-  .timeline-1 .event:after {
-    left: -31.8px;
-  }
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
 }
